@@ -3,7 +3,7 @@
 ////////////////// INFOS //////////////////
 
 // name : PSDS_TO_ARTBOARDS.jsx
-// description : Take all of the psd's from a folder, and create a single one, on different artboard
+// description : Select a folder of PSD'S, and this script will create one big document with each PSD as artboard
 // author : Robin Poitevin 
 // version : V 0.1
 // credits : open all files and extensions check based on functions of Jeffrey Tranberry 
@@ -99,7 +99,7 @@ function openFile(filelisting,numb) {
 };
 
 function savePSD(output){
-  	var psdFile = new File(output + "/" + "export_test");
+  	var psdFile = new File(output + "/" + "combined_PSDS");
   	psdSaveOptions = new PhotoshopSaveOptions();
   	psdSaveOptions.embedColorProfile = true;
   	psdSaveOptions.alphaChannels = true;  
